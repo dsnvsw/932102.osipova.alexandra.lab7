@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.shape-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.shape-buttons button {
+    padding: 5px;
+}
+
+.drawable-area {
+    position: relative;
+    flex: 1 1 auto;
+    width: 900px;
+    height: 600px;
+}
+
+.rectangle,
+.triangle,
+.circle {
+    position: absolute;
+    border: 1px solid black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
